@@ -12,12 +12,12 @@ function ResultCard({ item }) {
     >
       <div className="result-images">
         <div>
-          <img src={item.before} alt={`Antes ${item.title}`} />
+          <img src={item.before} alt={`Antes - ${item.title}`} />
           <span>Antes</span>
         </div>
 
         <div>
-          <img src={item.after} alt={`Después ${item.title}`} />
+          <img src={item.after} alt={`Después - ${item.title}`} />
           <span>Después</span>
         </div>
       </div>

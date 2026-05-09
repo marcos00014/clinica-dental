@@ -55,6 +55,10 @@
     grid-template-columns: 1fr;
   }
 
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
   .hero-content {
     text-align: center;
   }
@@ -138,6 +142,19 @@
   .stats-grid,
   .testimonial-cards {
     gap: 18px;
+  }
+
+  .result-card {
+    padding: 16px;
+    border-radius: 18px;
+  }
+
+  .result-images {
+    grid-template-columns: 1fr;
+  }
+
+  .result-images img {
+    height: 260px;
   }
 
   .contact-content {

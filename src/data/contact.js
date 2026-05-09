@@ -1,4 +1,5 @@
 import { Clock, MapPin, Phone } from "lucide-react";
+import { FacebookIcon, InstagramIcon } from "../components/icons/SocialIcons";
 
 export const contactContent = {
   label: "Contacto",
@@ -20,5 +21,18 @@ export const contactInfo = [
   {
     text: "WhatsApp: 345 4166622",
     icon: Phone,
+  },
+];
+
+export const socialLinks = [
+  {
+    label: "Instagram",
+    href: "#",
+    icon: InstagramIcon,
+  },
+  {
+    label: "Facebook",
+    href: "#",
+    icon: FacebookIcon,
   },
 ];

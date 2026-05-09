@@ -51,6 +51,30 @@
   box-shadow: 0 20px 46px rgba(37, 211, 102, 0.32);
 }
 
+.contact-socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.contact-socials a {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  color: white;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 14px;
+  transition: 0.25s ease;
+}
+
+.contact-socials a:hover {
+  color: #54d8e8;
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-3px);
+}
+
 .map-box {
   width: 100%;
   height: 340px;

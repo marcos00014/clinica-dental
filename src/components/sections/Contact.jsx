@@ -1,4 +1,4 @@
-import { contactContent, contactInfo } from "../../data";
+import { contactContent, contactInfo, socialLinks } from "../../data";
 import { whatsappMessage } from "../../utils/whatsapp";
 import ContactInfoItem from "../contact/ContactInfoItem";
 
@@ -22,6 +22,26 @@ function Contact() {
           >
             Hablar por WhatsApp
           </a>
+
+          <div className="contact-socials" aria-label="Redes sociales">
+            {socialLinks.map((item) => {
+              const Icon = item.icon;
+
+              return (
+                <a
+                  href={item.href}
+                  key={item.label}
+                  aria-label={item.label}
+                  title={item.label}
+                  onClick={(event) => {
+                    if (item.href === "#") event.preventDefault();
+                  }}
+                >
+                  <Icon size={22} />
+                </a>
+              );
+            })}
+          </div>
         </div>
 
         <div className="map-box">
