@@ -1,0 +1,150 @@
+.navbar {
+  width: 100%;
+  height: 78px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: none;
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.navbar-scrolled,
+.navbar-open {
+  background: rgba(255, 255, 255, 0.94);
+  border-bottom-color: rgba(8, 121, 170, 0.12);
+  box-shadow: 0 8px 30px rgba(15, 82, 110, 0.08);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: white;
+  transition: color 0.25s ease;
+}
+
+.navbar-scrolled .logo,
+.navbar-open .logo {
+  color: var(--primary);
+}
+
+.navbar-logo {
+  width: 118px;
+  height: 118px;
+  object-fit: contain;
+  margin-right: -34px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+.menu-toggle {
+  width: 44px;
+  height: 44px;
+  display: none;
+  place-items: center;
+  position: relative;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.menu-toggle span {
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  background: white;
+  border-radius: 999px;
+  transition: 0.25s ease;
+}
+
+.menu-toggle span:nth-child(1) {
+  transform: translateY(-7px);
+}
+
+.menu-toggle span:nth-child(3) {
+  transform: translateY(7px);
+}
+
+.navbar-scrolled .menu-toggle,
+.navbar-open .menu-toggle {
+  background: #e8f8fd;
+  border-color: #cdebf5;
+}
+
+.navbar-scrolled .menu-toggle span,
+.navbar-open .menu-toggle span {
+  background: var(--primary);
+}
+
+.navbar-open .menu-toggle span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.navbar-open .menu-toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-open .menu-toggle span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.nav-links a {
+  position: relative;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 800;
+  font-size: 0.95rem;
+  transition: 0.25s ease;
+  padding-bottom: 7px;
+}
+
+.navbar-scrolled .nav-links a,
+.navbar-open .nav-links a {
+  color: #263548;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active-nav {
+  color: white;
+}
+
+.navbar-scrolled .nav-links a:hover,
+.navbar-scrolled .nav-links .active-nav,
+.navbar-open .nav-links a:hover,
+.navbar-open .nav-links .active-nav {
+  color: var(--primary);
+}
+
+.nav-links a:hover::after,
+.nav-links .active-nav::after {
+  width: 100%;
+}

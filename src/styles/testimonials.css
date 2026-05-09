@@ -1,0 +1,40 @@
+.testimonials {
+  background:
+    radial-gradient(circle at 80% 20%, rgba(15, 183, 201, 0.12), transparent 30%),
+    linear-gradient(135deg, #f4f9fb 0%, #ffffff 100%);
+  text-align: center;
+}
+
+.testimonial {
+  background: white;
+  border: 1px solid #d8edf5;
+  border-bottom: 5px solid var(--dark);
+  border-radius: 26px;
+  padding: 30px;
+  box-shadow: 0 16px 40px rgba(15, 82, 110, 0.08);
+  transition: 0.25s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-6px);
+  border-bottom-color: var(--primary);
+}
+
+.testimonial p {
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 18px;
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.stars {
+  color: #f5b400;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}

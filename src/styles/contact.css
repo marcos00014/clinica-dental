@@ -1,0 +1,66 @@
+.contact {
+  background: white;
+}
+
+.contact-content {
+  max-width: 1180px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 36px;
+  align-items: center;
+  background: linear-gradient(135deg, var(--dark), var(--dark-2));
+  padding: 38px;
+  border-radius: 34px;
+  box-shadow: 0 30px 80px rgba(15, 82, 110, 0.18);
+}
+
+.contact h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.contact .section-label {
+  background: rgba(255, 255, 255, 0.12);
+  color: #54d8e8;
+}
+
+.contact-info {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 26px;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #d4dee7;
+}
+
+.contact-info svg {
+  color: #54d8e8;
+}
+
+.contact-whatsapp-btn {
+  background: linear-gradient(135deg, #25d366, #128c4a);
+  box-shadow: 0 16px 38px rgba(37, 211, 102, 0.24);
+}
+
+.contact-whatsapp-btn:hover {
+  box-shadow: 0 20px 46px rgba(37, 211, 102, 0.32);
+}
+
+.map-box {
+  width: 100%;
+  height: 340px;
+  border-radius: 26px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.map-box iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}

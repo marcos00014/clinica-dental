@@ -1,0 +1,66 @@
+.services {
+  background: linear-gradient(180deg, #f4f9fb 0%, #ffffff 100%);
+}
+
+.cards,
+.testimonial-cards {
+  max-width: 1180px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #d8edf5;
+  border-top: 5px solid var(--dark);
+  border-radius: 26px;
+  padding: 30px;
+  box-shadow: 0 16px 40px rgba(15, 82, 110, 0.08);
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-top-color: var(--primary);
+  box-shadow: 0 24px 55px rgba(15, 82, 110, 0.13);
+}
+
+.card-icon {
+  width: 78px;
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8f8fd;
+  color: var(--primary);
+  border: 1px solid #cdebf5;
+  border-radius: 22px;
+  margin-bottom: 20px;
+}
+
+.ortho-icon {
+  width: 92px;
+  height: 92px;
+  object-fit: contain;
+}
+
+.card h3 {
+  color: var(--primary);
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.card p,
+.contact p {
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.consult-btn {
+  background: var(--primary);
+  color: white;
+  padding: 11px 20px;
+  margin-top: 20px;
+}

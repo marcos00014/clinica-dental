@@ -1,0 +1,179 @@
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: grid;
+  }
+
+  .nav-links {
+    width: calc(100% - 10%);
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 5%;
+    right: 5%;
+    display: grid;
+    gap: 4px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.97);
+    border: 1px solid rgba(8, 121, 170, 0.12);
+    border-radius: 18px;
+    box-shadow: 0 20px 45px rgba(15, 82, 110, 0.16);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: 0.25s ease;
+  }
+
+  .navbar-open .nav-links {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .nav-links a {
+    color: #263548;
+    padding: 13px 14px;
+    border-radius: 12px;
+  }
+
+  .nav-links a::after {
+    display: none;
+  }
+
+  .nav-links a:hover,
+  .nav-links .active-nav {
+    background: #e8f8fd;
+    color: var(--primary);
+  }
+
+  .hero {
+    min-height: 80vh;
+    padding-top: 118px;
+  }
+
+  .hero-container,
+  .about-grid,
+  .experience-card {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons,
+  .hero-mini {
+    justify-content: center;
+  }
+
+  .cards,
+  .testimonial-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-info p {
+    justify-content: center;
+  }
+
+  .results-grid,
+  .stats-grid,
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+
+  .map-box {
+    height: 280px;
+  }
+}
+
+@media (max-width: 520px) {
+  .navbar {
+    padding: 0 5%;
+  }
+
+  .logo {
+    font-size: 1.35rem;
+  }
+
+  .navbar-logo {
+    width: 92px;
+    height: 92px;
+    margin-right: -28px;
+  }
+
+  .hero,
+  section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .hero h1 {
+    font-size: 2.35rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+  }
+
+  .hero-mini {
+    display: grid;
+    justify-items: center;
+  }
+
+  .cards,
+  .results-grid,
+  .stats-grid,
+  .testimonial-cards {
+    gap: 18px;
+  }
+
+  .contact-content {
+    padding: 26px;
+    border-radius: 26px;
+  }
+
+  .contact-info p {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .experience-card {
+    padding: 30px;
+    border-radius: 26px;
+  }
+
+  .chat-widget {
+    right: 12px;
+    bottom: 14px;
+  }
+
+  .chat-box {
+    width: calc(100vw - 24px);
+    height: 76vh;
+  }
+
+  .chat-body {
+    height: calc(76vh - 72px);
+  }
+
+  .chat-bubble {
+    font-size: 0.8rem;
+  }
+
+  .quick-questions button {
+    font-size: 0.78rem;
+  }
+}

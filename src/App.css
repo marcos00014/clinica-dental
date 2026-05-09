@@ -1,0 +1,14 @@
+@import "./styles/base.css";
+@import "./styles/navbar.css";
+@import "./styles/hero.css";
+@import "./styles/sections.css";
+@import "./styles/services.css";
+@import "./styles/results.css";
+@import "./styles/about.css";
+@import "./styles/stats.css";
+@import "./styles/experience.css";
+@import "./styles/testimonials.css";
+@import "./styles/contact.css";
+@import "./styles/footer.css";
+@import "./styles/chat.css";
+@import "./styles/responsive.css";
